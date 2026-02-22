@@ -28,6 +28,10 @@ Install these tools before running (You shouldn't need to download these if you 
    pkill waybar
    waybar
    ```
+   or
+   ```
+   omarchy-restart-waybar
+   ```
 ## Preview V1
 ### Features
 - Weather
