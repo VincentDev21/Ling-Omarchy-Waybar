@@ -42,11 +42,8 @@ Install these tools before running (You shouldn't need to download these if you 
 - App search
 ### Screenshots
 #### Tokyo Night
-![v1](assets/v1/v1-preview-waybar.png)
 ![v1](assets/v1/v1-preview.png)
 #### Catppuchin Latte
-![v1](assets/v1/v1-preview-waybar-1.png)
 ![v1](assets/v1/v1-preview-1.png)
 #### Ghost Pastel | [Repo](https://github.com/row-huh/omarchy-ghost-pastel-theme) |
-![v1](assets/v1/v1-preview-waybar-2.png)
 ![v1](assets/v1/v1-preview-2.png)
