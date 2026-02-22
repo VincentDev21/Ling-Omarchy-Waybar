@@ -1,0 +1,319 @@
+@import "../omarchy/current/theme/waybar.css";
+
+/* Base */
+* {
+  color: @foreground;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: 'JetBrainsMono Nerd Font';
+  font-size: 13px;
+}
+
+/* Bar */
+window#waybar {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Arrow glyph sizes */
+#custom-left-left-arrow,
+#custom-left-arrow-light,
+#custom-right-right-arrow,
+#custom-right-arrow-light,
+#custom-right-arrow-dark,
+#custom-right-arrow-1,
+#custom-right-arrow-2,
+#custom-right-arrow-3,
+#custom-right-arrow-4,
+#custom-left-arrow-1,
+#custom-left-arrow-2,
+#custom-left-arrow-3,
+#custom-left-arrow-4 {
+  font-size: 20px;
+}
+
+/* Workspaces */
+#workspaces button {
+  all: initial;
+  padding: 0 6px;
+  margin: 0 1.5px;
+  min-width: 9px;
+}
+
+#workspaces button.empty {
+  opacity: 0.5;
+}
+
+#workspaces {
+  background-color: @background;
+}
+
+/* Shared text color */
+#temperature,
+#memory,
+#cpu,
+#clock.time,
+#clock.date,
+#custom-weather {
+  color: @background;
+}
+
+/* Center modules */
+#temperature {
+  background-color: shade(@foreground, 0.7);
+}
+
+#memory {
+  background-color: shade(@foreground, 0.8);
+}
+
+#cpu {
+  background-color: shade(@foreground, 0.9);
+}
+
+#custom-omarchy {
+  background-color: @foreground;
+  color: @background;
+}
+
+#clock.time {
+  background-color: shade(@foreground, 0.9);
+}
+
+#clock.date {
+  background-color: shade(@foreground, 0.8);
+}
+
+#custom-weather {
+  background-color: shade(@foreground, 0.7);
+}
+
+/* Left-side modules */
+#custom-power {
+  background-color: @foreground;
+  color: @background;
+}
+
+#custom-search {
+  background-color: @foreground;
+  color: @background;
+}
+
+#custom-power,
+#custom-search,
+#window,
+#mpris,
+#battery,
+#pulseaudio,
+#custom-cava,
+#tray,
+#bluetooth,
+#network,
+#custom-expand-icon {
+  color: @background;
+  background-color: @foreground;
+}
+
+#window {
+  background-color: @background;
+  color: @foreground;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#custom-power {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+#custom-search,
+#mpris {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/* Right-side modules */
+#custom-cava {
+  padding-right: 10px;
+}
+
+#battery,
+#pulseaudio {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#custom-screenrecording-indicator,
+#custom-voxtype,
+#bluetooth,
+#network,
+#custom-expand-icon {
+  background-color: @background;
+  color: @foreground;
+}
+
+#tray {
+  background-color: @background;
+  color: @foreground;
+  padding-right: 16px;
+}
+
+#bluetooth {
+  padding-right: 17px;
+}
+
+#network {
+  padding-right: 13px;
+}
+
+#custom-expand-icon {
+  padding-right: 18px;
+}
+
+#custom-update {
+  background-color: @background;
+  font-size: 9px;
+}
+
+/* Arrow colors */
+
+#custom-right-arrow-dark {
+  background-color: transparent;
+  color: @background;
+}
+
+#custom-left-arrow-light {
+  background-color: transparent;
+  color: @foreground;
+}
+
+#custom-right-arrow-light {
+  background-color: @background;
+  color: @foreground;
+}
+
+
+#custom-left-left-arrow,
+#custom-right-right-arrow {
+  background-color: @foreground;
+  color: @background;
+}
+
+#custom-left-arrow-4,
+#custom-right-arrow-4 {
+  color: shade(@foreground, 0.7);
+  background: transparent;
+}
+
+#custom-left-arrow-3,
+#custom-right-arrow-3 {
+  color: shade(@foreground, 0.8);
+  background: shade(@foreground, 0.7);
+}
+
+#custom-left-arrow-2,
+#custom-right-arrow-2 {
+  color: shade(@foreground, 0.9);
+  background: shade(@foreground, 0.8);
+}
+
+#custom-left-arrow-1,
+#custom-right-arrow-1 {
+  color: @foreground;
+  background: shade(@foreground, 0.9);
+}
+
+/* Tooltip */
+tooltip {
+  padding: 4px 8px;
+  background-color: @background;
+  color: @foreground;
+  border: 1px solid @foreground;
+  border-radius: 6px;
+}
+
+tooltip label {
+  color: @foreground;
+}
+
+/* Popup menu */
+window.popup,
+window.popup decoration,
+menu,
+menu decoration {
+  border-radius: 15px;
+  background: @background;
+  color: @foreground;
+  box-shadow: none;
+  border: 1px solid @foreground;
+  outline: none;
+  background-clip: padding-box;
+  -gtk-outline-radius: 15px;
+}
+
+menuitem {
+  border-radius: 15px;
+}
+
+menuitem:hover,
+menuitem:focus,
+menuitem:selected {
+  background: shade(@foreground, 0.2);
+  color: @foreground;
+}
+
+/* Utility */
+.hidden {
+  opacity: 0;
+}
+
+#custom-screenrecording-indicator {
+  font-size: 9px;
+}
+
+#custom-screenrecording-indicator.active {
+  color: red;
+}
+
+#custom-voxtype {
+  margin: 0 0 0 7.5px;
+}
+
+#custom-screenrecording-indicator,
+#custom-voxtype {
+  min-width: 12px;
+}
+
+#custom-voxtype.recording {
+  color: @foreground;
+}
+
+/* Per-output overrides */
+window#waybar.DP-1 * {
+  font-size: 15px;
+}
+
+window#waybar.DP-1 #custom-left-arrow-light,
+window#waybar.DP-1 #custom-left-left-arrow,
+window#waybar.DP-1 #custom-right-arrow-light,
+window#waybar.DP-1 #custom-right-arrow-dark,
+window#waybar.DP-1 #custom-right-right-arrow,
+window#waybar.DP-1 #custom-right-arrow-1,
+window#waybar.DP-1 #custom-right-arrow-2,
+window#waybar.DP-1 #custom-right-arrow-3,
+window#waybar.DP-1 #custom-right-arrow-4,
+window#waybar.DP-1 #custom-left-arrow-1,
+window#waybar.DP-1 #custom-left-arrow-2,
+window#waybar.DP-1 #custom-left-arrow-3,
+window#waybar.DP-1 #custom-left-arrow-4 {
+  font-size: 23px;
+}
+
+window#waybar.DP-1 #custom-update,
+window#waybar.DP-1 #custom-screenrecording-indicator {
+  font-size: 10px;
+}

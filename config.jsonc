@@ -1,0 +1,132 @@
+{
+  "reload_style_on_change": true,
+  "layer": "top",
+  "position": "top",
+  "spacing": 0,
+  "margin-top": 10,
+  "include": [
+    "~/.config/waybar/modules/hyprland.jsonc",
+    "~/.config/waybar/modules/system.jsonc",
+    "~/.config/waybar/modules/custom.jsonc"
+  ],
+  "modules-left": [
+    "custom/power",
+    "custom/left-left-arrow",
+    "hyprland/workspaces",
+    "custom/right-right-arrow",
+    "custom/search",
+    "custom/right-arrow-light",
+    "hyprland/window",
+    "custom/right-arrow-dark"
+  ],
+  "modules-center": [
+    "custom/left-arrow-4",
+    "temperature",
+    "custom/left-arrow-3",
+    "memory",
+    "custom/left-arrow-2",
+    "cpu",
+    "custom/left-arrow-1",
+    "custom/omarchy",
+    "custom/right-arrow-1",
+    "clock#time",
+    "custom/right-arrow-2",
+    "clock#date",
+    "custom/right-arrow-3",
+    "custom/weather",
+    "custom/right-arrow-4"
+    // "custom/update",
+    // "custom/voxtype",
+    // "custom/screenrecording-indicator"
+  ],
+  "modules-right": [
+    "custom/left-arrow-light",
+    "mpris",
+    "custom/cava",
+    "custom/left-left-arrow",
+    "group/tray-expander",
+    "bluetooth",
+    "network",
+    "custom/update",
+    "custom/voxtype",
+    "custom/screenrecording-indicator",
+    "custom/right-right-arrow",
+    "pulseaudio",
+    "battery"
+  ],
+
+  "group/tray-expander": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 600,
+      "children-class": "tray-group-item"
+    },
+    "modules": [
+      "custom/expand-icon",
+      "tray"
+    ]
+  },
+  "tray": {
+    "icon-size": 12,
+    "spacing": 17
+  },
+  // Left arrows
+  "custom/left-arrow-light": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/left-left-arrow": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/left-arrow-1": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/left-arrow-2": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/left-arrow-3": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/left-arrow-4": {
+    "format": "",
+    "tooltip": false
+  },
+  // Right arrows
+  "custom/right-arrow-light": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/right-arrow-dark": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/right-arrow-1": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/right-arrow-2": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/right-arrow-3": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/right-arrow-4": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/right-right-arrow": {
+    "format": "",
+    "tooltip": false
+  },
+  // Misc helper modules
+  "custom/white-space": {
+    "format": " ",
+    "tooltip": false
+  }
+}

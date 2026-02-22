@@ -1,0 +1,19 @@
+# OS / filesystem
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Local runtime/cache artifacts
+.cache/
+*.log
+
+# Optional local overrides
+*.local
+
+README.md
